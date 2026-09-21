@@ -1,0 +1,1504 @@
+<?xml version='1.0' encoding='utf-8'?>
+<openrocket version="1.10" creator="OpenRocket 24.12">
+  <rocket>
+    <name>Banana3</name>
+    <id>10ea4a84-8016-4da1-8f6f-0762dc0bbe70</id>
+    <axialoffset method="absolute">0.0</axialoffset>
+    <position type="absolute">0.0</position>
+    <comment>Design 1
+</comment>
+    <designer>Sanjeev D L</designer>
+    <designtype>original</designtype>
+    <motorconfiguration configid="c31fe6b3-4435-4462-bf70-6f97c4f18e98">
+      <stage number="0" active="true"/>
+      <stage number="1" active="true"/>
+    </motorconfiguration>
+    <motorconfiguration configid="fe18026a-77ae-4af8-acb4-130db934461a">
+      <stage number="0" active="true"/>
+      <stage number="1" active="true"/>
+    </motorconfiguration>
+    <motorconfiguration configid="47bb31df-2125-46ad-96af-a3b0d8c54c59" default="true">
+      <stage number="0" active="true"/>
+      <stage number="1" active="true"/>
+    </motorconfiguration>
+    <motorconfiguration configid="f7417c4a-44c9-4249-a843-6260d0e3b12c">
+      <stage number="0" active="true"/>
+      <stage number="1" active="true"/>
+    </motorconfiguration>
+    <referencetype>maximum</referencetype>
+
+    <subcomponents>
+      <stage>
+        <name>Sustainer</name>
+        <id>b4d58cfe-d173-4b96-a203-cc206cbc38a6</id>
+
+        <subcomponents>
+          <nosecone>
+            <name>Nose Cone</name>
+            <id>8ff4fdeb-4336-4455-a601-bf6beac3b4ba</id>
+            <finish>normal</finish>
+            <material type="bulk" density="1850.0" group="Composites">Fiberglass</material>
+            <length>0.73</length>
+            <thickness>0.0025</thickness>
+            <shape>haack</shape>
+            <shapeclipped>false</shapeclipped>
+            <shapeparameter>0.3</shapeparameter>
+            <aftradius>0.073</aftradius>
+            <aftshoulderradius>0.054000000000000006</aftshoulderradius>
+            <aftshoulderlength>0.0</aftshoulderlength>
+            <aftshoulderthickness>0.0025</aftshoulderthickness>
+            <aftshouldercapped>false</aftshouldercapped>
+            <isflipped>false</isflipped>
+
+            <subcomponents>
+              <masscomponent>
+                <name>Payload</name>
+                <id>9b94314d-8212-4676-9eee-9f04f43d03ab</id>
+                <axialoffset method="bottom">-0.01</axialoffset>
+                <position type="bottom">-0.01</position>
+                <packedlength>0.34049999999999997</packedlength>
+                <packedradius>0.05</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <mass>3.0</mass>
+                <masscomponenttype>payload</masscomponenttype>
+              </masscomponent>
+
+              <bulkhead>
+                <name>Bulkhead</name>
+                <id>5d75aa2f-6fb8-4077-ac2e-419a17a7f44a</id>
+                <instancecount>1</instancecount>
+                <instanceseparation>0.0</instanceseparation>
+                <axialoffset method="bottom">0.0</axialoffset>
+                <position type="bottom">0.0</position>
+                <material type="bulk" density="2700.0" group="Metals">Aluminum</material>
+                <length>0.01</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+              </bulkhead>
+
+              <masscomponent>
+                <name>NoseCone_tip</name>
+                <id>0d97a86a-1b37-40ce-94ad-165e1a8532fc</id>
+                <axialoffset method="top">0.0</axialoffset>
+                <position type="top">0.0</position>
+                <packedlength>0.025</packedlength>
+                <packedradius>0.0125</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <mass>0.5</mass>
+                <masscomponenttype>masscomponent</masscomponenttype>
+              </masscomponent>
+            </subcomponents>
+          </nosecone>
+
+          <transition>
+            <name>Transition</name>
+            <id>35cc2bc6-4d73-465a-9ea2-6a158ff06d90</id>
+            <overridemass>0.5</overridemass>
+            <overridesubcomponentsmass>false</overridesubcomponentsmass>
+            <finish>normal</finish>
+            <material type="bulk" density="2700.0" group="Metals">Aluminum</material>
+            <length>0.13</length>
+            <thickness>0.0025</thickness>
+            <shape>conical</shape>
+            <foreradius>auto 0.073</foreradius>
+            <aftradius>auto 0.054000000000000006</aftradius>
+            <foreshoulderradius>0.0</foreshoulderradius>
+            <foreshoulderlength>0.0</foreshoulderlength>
+            <foreshoulderthickness>0.0</foreshoulderthickness>
+            <foreshouldercapped>false</foreshouldercapped>
+            <aftshoulderradius>0.0</aftshoulderradius>
+            <aftshoulderlength>0.0</aftshoulderlength>
+            <aftshoulderthickness>0.0</aftshoulderthickness>
+            <aftshouldercapped>false</aftshouldercapped>
+          </transition>
+
+          <bodytube>
+            <name>Recovery Tube</name>
+            <id>6d381f64-b299-4228-9154-011778ff0532</id>
+            <finish>normal</finish>
+            <material type="bulk" density="1850.0" group="Composites">Fiberglass</material>
+            <length>0.5099999999999999</length>
+            <thickness>0.0025</thickness>
+            <radius>0.054000000000000006</radius>
+
+            <subcomponents>
+              <parachute>
+                <name>Parachute</name>
+                <id>5ccd57b6-55f6-4437-9111-2c571de5009f</id>
+                <axialoffset method="top">0.010000000000000009</axialoffset>
+                <position type="top">0.010000000000000009</position>
+                <packedlength>0.35000000000000003</packedlength>
+                <packedradius>0.051500000000000004</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cd>2.2</cd>
+                <material type="surface" density="0.067" group="Fabrics">Ripstop nylon</material>
+                <deployevent>never</deployevent>
+                <deployaltitude>457.0</deployaltitude>
+                <deploydelay>0.0</deploydelay>
+                <diameter>3.66</diameter>
+                <linecount>6</linecount>
+                <linelength>0.3</linelength>
+                <linematerial type="line" density="0.0018" group="ThreadsLines">Elastic cord (round 2 mm, 1/16 in)</linematerial>
+              </parachute>
+
+              <shockcord>
+                <name>Shock Cord</name>
+                <id>2439851b-f6e9-4f85-82d6-e5a6f4936f1d</id>
+                <axialoffset method="top">0.2099999999999998</axialoffset>
+                <position type="top">0.2099999999999998</position>
+                <packedlength>0.1</packedlength>
+                <packedradius>0.051500000000000004</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cordlength>8.0</cordlength>
+                <material type="line" density="0.0018" group="ThreadsLines">Elastic cord (round 2 mm, 1/16 in)</material>
+              </shockcord>
+
+              <bulkhead>
+                <name>Recovery Bulkhead</name>
+                <id>33451a83-a191-4611-b1be-e8274a96e931</id>
+                <instancecount>1</instancecount>
+                <instanceseparation>0.0</instanceseparation>
+                <axialoffset method="bottom">-0.21999999999999997</axialoffset>
+                <position type="bottom">-0.21999999999999997</position>
+                <material type="bulk" density="2700.0" group="Metals">Aluminum</material>
+                <length>0.01</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+              </bulkhead>
+
+              <masscomponent>
+                <name>Recovery System</name>
+                <id>2836e6dd-f4b8-4aa0-9d05-89934eab5e66</id>
+                <axialoffset method="top">0.34999999999999987</axialoffset>
+                <position type="top">0.34999999999999987</position>
+                <packedlength>0.16</packedlength>
+                <packedradius>0.05</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <mass>0.3</mass>
+                <masscomponenttype>recoveryhardware</masscomponenttype>
+              </masscomponent>
+            </subcomponents>
+          </bodytube>
+
+          <bodytube>
+            <name>Avionics Tube</name>
+            <id>401acc69-4a31-41bd-8ba5-89a28d63fe56</id>
+            <finish>normal</finish>
+            <material type="bulk" density="1850.0" group="Composites">Fiberglass</material>
+            <length>0.5599999999999999</length>
+            <thickness>0.0025</thickness>
+            <radius>0.054000000000000006</radius>
+
+            <subcomponents>
+              <masscomponent>
+                <name>Avionics</name>
+                <id>043d1695-ab92-40b8-a081-139188ff7a80</id>
+                <axialoffset method="top">0.0</axialoffset>
+                <position type="top">0.0</position>
+                <packedlength>0.5</packedlength>
+                <packedradius>0.051500000000000004</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <mass>4.0</mass>
+                <masscomponenttype>flightcomputer</masscomponenttype>
+              </masscomponent>
+
+              <masscomponent>
+                <name>Controls</name>
+                <id>f16663f9-f3c7-4ad5-b214-48ed60922db4</id>
+                <axialoffset method="top">0.5499999999999999</axialoffset>
+                <position type="top">0.5499999999999999</position>
+                <packedlength>0.15</packedlength>
+                <packedradius>0.051500000000000004</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <mass>1.0</mass>
+                <masscomponenttype>flightcomputer</masscomponenttype>
+              </masscomponent>
+            </subcomponents>
+          </bodytube>
+
+          <bodytube>
+            <name>Motor_tube</name>
+            <id>e8448356-6915-4a23-8838-1f17d7153a17</id>
+            <overridemass>3.0</overridemass>
+            <overridesubcomponentsmass>false</overridesubcomponentsmass>
+            <finish>normal</finish>
+            <material type="bulk" density="1780.0" group="Composites">Carbon fiber</material>
+            <length>1.075</length>
+            <thickness>0.0025</thickness>
+            <radius>0.054000000000000006</radius>
+            <motormount>
+              <ignitionevent>automatic</ignitionevent>
+              <ignitiondelay>0.0</ignitiondelay>
+              <overhang>-0.1600000000000001</overhang>
+              <motor configid="c31fe6b3-4435-4462-bf70-6f97c4f18e98">
+                <type>reload</type>
+                <manufacturer>AeroTech</manufacturer>
+                <digest>1a6cb521e4b6172a20589a60a0fbe6f1</digest>
+                <designation>M1939W</designation>
+                <diameter>0.098</diameter>
+                <length>0.732</length>
+                <delay>0.0</delay>
+              </motor>
+              <ignitionconfiguration configid="c31fe6b3-4435-4462-bf70-6f97c4f18e98">
+                <ignitionevent>burnout</ignitionevent>
+                <ignitiondelay>1.0</ignitiondelay>
+              </ignitionconfiguration>
+              <motor configid="fe18026a-77ae-4af8-acb4-130db934461a">
+                <type>reload</type>
+                <manufacturer>AeroTech</manufacturer>
+                <digest>b1c5a8082a1ca23b8020bf1fb2564f03</digest>
+                <designation>N1000W</designation>
+                <diameter>0.098</diameter>
+                <length>1.046</length>
+                <delay>none</delay>
+              </motor>
+              <ignitionconfiguration configid="fe18026a-77ae-4af8-acb4-130db934461a">
+                <ignitionevent>burnout</ignitionevent>
+                <ignitiondelay>2.0</ignitiondelay>
+              </ignitionconfiguration>
+              <motor configid="47bb31df-2125-46ad-96af-a3b0d8c54c59">
+                <type>reload</type>
+                <manufacturer>AeroTech</manufacturer>
+                <digest>1a6cb521e4b6172a20589a60a0fbe6f1</digest>
+                <designation>M1939W</designation>
+                <diameter>0.098</diameter>
+                <length>0.732</length>
+                <delay>none</delay>
+              </motor>
+              <ignitionconfiguration configid="47bb31df-2125-46ad-96af-a3b0d8c54c59">
+                <ignitionevent>burnout</ignitionevent>
+                <ignitiondelay>2.0</ignitiondelay>
+              </ignitionconfiguration>
+              <motor configid="f7417c4a-44c9-4249-a843-6260d0e3b12c">
+                <type>reload</type>
+                <manufacturer>Cesaroni Technology</manufacturer>
+                <digest>51bcec24f9590d2f66adc89697d180b1</digest>
+                <designation>9994M3400-P</designation>
+                <diameter>0.098</diameter>
+                <length>0.702</length>
+                <delay>0.0</delay>
+              </motor>
+              <ignitionconfiguration configid="f7417c4a-44c9-4249-a843-6260d0e3b12c">
+                <ignitionevent>burnout</ignitionevent>
+                <ignitiondelay>4.0</ignitiondelay>
+              </ignitionconfiguration>
+            </motormount>
+
+            <subcomponents>
+              <bulkhead>
+                <name>Motor Mount</name>
+                <id>7ba55e14-f3d7-4506-af03-73dc9de38b33</id>
+                <instancecount>1</instancecount>
+                <instanceseparation>0.0</instanceseparation>
+                <axialoffset method="bottom">-0.888</axialoffset>
+                <position type="bottom">-0.888</position>
+                <material type="bulk" density="2700.0" group="Metals">Aluminum</material>
+                <length>0.03</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.051500000000000004</outerradius>
+              </bulkhead>
+
+              <tubecoupler>
+                <name>Tube Coupler</name>
+                <id>c301e444-8f04-4f5b-afa1-3022aa5b0278</id>
+                <axialoffset method="top">-0.22</axialoffset>
+                <position type="top">-0.22</position>
+                <material type="bulk" density="1850.0" group="Composites">Fiberglass</material>
+                <length>0.38</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.051500000000000004</outerradius>
+                <thickness>0.0025</thickness>
+              </tubecoupler>
+
+              <trapezoidfinset>
+                <name>Trapezoidal Fin Set</name>
+                <id>37e66a0f-b11f-4b58-8488-29c89a4f1eed</id>
+                <instancecount>4</instancecount>
+                <fincount>4</fincount>
+                <radiusoffset method="surface">0.0</radiusoffset>
+                <angleoffset method="relative">0.0</angleoffset>
+                <rotation>0.0</rotation>
+                <axialoffset method="bottom">0.0</axialoffset>
+                <position type="bottom">0.0</position>
+                <finish>normal</finish>
+                <material type="bulk" density="1780.0" group="Composites">Carbon fiber</material>
+                <thickness>0.003</thickness>
+                <crosssection>square</crosssection>
+                <cant>0.0</cant>
+                <filletradius>0.0</filletradius>
+                <filletmaterial type="bulk" density="1780.0" group="Composites">Carbon fiber</filletmaterial>
+                <rootchord>0.18</rootchord>
+                <tipchord>0.06000000000000001</tipchord>
+                <sweeplength>0.09</sweeplength>
+                <height>0.1</height>
+              </trapezoidfinset>
+
+              <centeringring>
+                <name>Retainer</name>
+                <id>7a132a73-f0db-4266-a726-dde38852fa35</id>
+                <instancecount>1</instancecount>
+                <instanceseparation>0.0</instanceseparation>
+                <axialoffset method="bottom">-0.16</axialoffset>
+                <position type="bottom">-0.16</position>
+                <material type="bulk" density="2700.0" group="Metals">Aluminum</material>
+                <length>0.01</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.054000000000000006</outerradius>
+                <innerradius>0.025</innerradius>
+              </centeringring>
+            </subcomponents>
+          </bodytube>
+        </subcomponents>
+      </stage>
+
+      <stage>
+        <name>Stage</name>
+        <id>69462090-dabb-43e1-afce-28e0a728b50a</id>
+        <separationevent>ejection</separationevent>
+        <separationaltitude>200.0</separationaltitude>
+        <separationdelay>0.0</separationdelay>
+        <separationconfiguration configid="c31fe6b3-4435-4462-bf70-6f97c4f18e98">
+            <separationevent>burnout</separationevent>
+            <separationaltitude>200.0</separationaltitude>
+            <separationdelay>0.0</separationdelay>
+        </separationconfiguration>
+        <separationconfiguration configid="47bb31df-2125-46ad-96af-a3b0d8c54c59">
+            <separationevent>burnout</separationevent>
+            <separationaltitude>200.0</separationaltitude>
+            <separationdelay>0.0</separationdelay>
+        </separationconfiguration>
+        <separationconfiguration configid="f7417c4a-44c9-4249-a843-6260d0e3b12c">
+            <separationevent>burnout</separationevent>
+            <separationaltitude>200.0</separationaltitude>
+            <separationdelay>0.0</separationdelay>
+        </separationconfiguration>
+
+        <subcomponents>
+          <bodytube>
+            <name>Booster Tube</name>
+            <id>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</id>
+            <finish>normal</finish>
+            <material type="bulk" density="1850.0" group="Composites">Fiberglass</material>
+            <length>0.89</length>
+            <thickness>0.0025</thickness>
+            <radius>0.054000000000000006</radius>
+
+            <subcomponents>
+              <tubecoupler>
+                <name>Tube Coupler</name>
+                <id>0a045617-753d-4f31-8761-d9230a17bd5b</id>
+                <axialoffset method="top">-0.16</axialoffset>
+                <position type="top">-0.16</position>
+                <material type="bulk" density="1850.0" group="Composites">Fiberglass</material>
+                <length>0.32</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+                <thickness>0.0</thickness>
+              </tubecoupler>
+
+              <parachute>
+                <name>Parachute_booster</name>
+                <id>6779c1ee-a06a-4cea-9cd5-06a61b0d77e1</id>
+                <axialoffset method="top">-0.13000000000000003</axialoffset>
+                <position type="top">-0.13000000000000003</position>
+                <packedlength>0.24999999999999997</packedlength>
+                <packedradius>0.051500000000000004</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cd>2.2</cd>
+                <material type="surface" density="0.067" group="Fabrics">Ripstop nylon</material>
+                <deployevent>never</deployevent>
+                <deployaltitude>457.0</deployaltitude>
+                <deploydelay>0.0</deploydelay>
+                <diameter>3.66</diameter>
+                <linecount>6</linecount>
+                <linelength>0.3</linelength>
+                <linematerial type="line" density="0.0018" group="ThreadsLines">Elastic cord (round 2 mm, 1/16 in)</linematerial>
+              </parachute>
+
+              <shockcord>
+                <name>Shock Cord</name>
+                <id>2cfa4e48-e197-4830-9a03-84d26fcc426c</id>
+                <axialoffset method="top">0.13000000000000003</axialoffset>
+                <position type="top">0.13000000000000003</position>
+                <packedlength>0.1</packedlength>
+                <packedradius>0.051500000000000004</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <cordlength>8.0</cordlength>
+                <material type="line" density="0.0018" group="ThreadsLines">Elastic cord (round 2 mm, 1/16 in)</material>
+              </shockcord>
+
+              <bulkhead>
+                <name>Recovery Bulkhead</name>
+                <id>2387fc04-d671-4692-a636-ac2de08a91a5</id>
+                <instancecount>1</instancecount>
+                <instanceseparation>0.0</instanceseparation>
+                <axialoffset method="top">0.2350000000000002</axialoffset>
+                <position type="top">0.2350000000000002</position>
+                <material type="bulk" density="2700.0" group="Metals">Aluminum</material>
+                <length>0.01</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+              </bulkhead>
+
+              <masscomponent>
+                <name>Recovery System</name>
+                <id>7f8da184-cc68-46bb-a889-47a74eb8232e</id>
+                <axialoffset method="top">0.2499999999999998</axialoffset>
+                <position type="top">0.2499999999999998</position>
+                <packedlength>0.16</packedlength>
+                <packedradius>0.05</packedradius>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <mass>0.3</mass>
+                <masscomponenttype>recoveryhardware</masscomponenttype>
+              </masscomponent>
+
+              <bulkhead>
+                <name>Motor Mount</name>
+                <id>c390c90a-0e91-44db-83b1-850c6e8c1188</id>
+                <instancecount>1</instancecount>
+                <instanceseparation>0.0</instanceseparation>
+                <axialoffset method="top">0.41000000000000003</axialoffset>
+                <position type="top">0.41000000000000003</position>
+                <material type="bulk" density="2700.0" group="Metals">Aluminum</material>
+                <length>0.04</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>auto</outerradius>
+              </bulkhead>
+            </subcomponents>
+          </bodytube>
+
+          <bodytube>
+            <name>Body Tube</name>
+            <id>a8e3b2ec-6207-4638-8dfc-540cb5ae2b8b</id>
+            <overridemass>3.0</overridemass>
+            <overridesubcomponentsmass>false</overridesubcomponentsmass>
+            <finish>normal</finish>
+            <material type="bulk" density="1780.0" group="Composites">Carbon fiber</material>
+            <length>0.99</length>
+            <thickness>0.0025000000000000022</thickness>
+            <radius>0.054000000000000006</radius>
+            <motormount>
+              <ignitionevent>automatic</ignitionevent>
+              <ignitiondelay>0.0</ignitiondelay>
+              <overhang>0.0</overhang>
+              <motor configid="c31fe6b3-4435-4462-bf70-6f97c4f18e98">
+                <type>reload</type>
+                <manufacturer>AeroTech</manufacturer>
+                <digest>135291720bee0f2bbd556ea49dd9a2ca</digest>
+                <designation>N3300R</designation>
+                <diameter>0.098</diameter>
+                <length>1.046</length>
+                <delay>0.0</delay>
+              </motor>
+              <ignitionconfiguration configid="c31fe6b3-4435-4462-bf70-6f97c4f18e98">
+                <ignitionevent>automatic</ignitionevent>
+                <ignitiondelay>0.0</ignitiondelay>
+              </ignitionconfiguration>
+              <motor configid="fe18026a-77ae-4af8-acb4-130db934461a">
+                <type>reload</type>
+                <manufacturer>AeroTech</manufacturer>
+                <digest>d46cd367e8d7231dc1204e9a1cbbd220</digest>
+                <designation>N4000W-PS</designation>
+                <diameter>0.098</diameter>
+                <length>1.433</length>
+                <delay>none</delay>
+              </motor>
+              <ignitionconfiguration configid="fe18026a-77ae-4af8-acb4-130db934461a">
+                <ignitionevent>launch</ignitionevent>
+                <ignitiondelay>0.0</ignitiondelay>
+              </ignitionconfiguration>
+              <motor configid="47bb31df-2125-46ad-96af-a3b0d8c54c59">
+                <type>reload</type>
+                <manufacturer>AeroTech</manufacturer>
+                <digest>d46cd367e8d7231dc1204e9a1cbbd220</digest>
+                <designation>N4000W-PS</designation>
+                <diameter>0.098</diameter>
+                <length>1.433</length>
+                <delay>none</delay>
+              </motor>
+              <ignitionconfiguration configid="47bb31df-2125-46ad-96af-a3b0d8c54c59">
+                <ignitionevent>launch</ignitionevent>
+                <ignitiondelay>0.0</ignitiondelay>
+              </ignitionconfiguration>
+              <motor configid="f7417c4a-44c9-4249-a843-6260d0e3b12c">
+                <type>reload</type>
+                <manufacturer>Cesaroni Technology</manufacturer>
+                <digest>f63bdcd39eb397ae77483e657eea6090</digest>
+                <designation>20146N5800-P</designation>
+                <diameter>0.098</diameter>
+                <length>1.239</length>
+                <delay>none</delay>
+              </motor>
+              <ignitionconfiguration configid="f7417c4a-44c9-4249-a843-6260d0e3b12c">
+                <ignitionevent>launch</ignitionevent>
+                <ignitiondelay>0.0</ignitiondelay>
+              </ignitionconfiguration>
+            </motormount>
+
+            <subcomponents>
+              <centeringring>
+                <name>Retainer</name>
+                <id>0cdce92d-8f37-48c8-bd14-7ddf419147fe</id>
+                <instancecount>1</instancecount>
+                <instanceseparation>0.0</instanceseparation>
+                <axialoffset method="bottom">0.0</axialoffset>
+                <position type="bottom">0.0</position>
+                <material type="bulk" density="2700.0" group="Metals">Aluminum</material>
+                <length>0.01</length>
+                <radialposition>0.0</radialposition>
+                <radialdirection>0.0</radialdirection>
+                <outerradius>0.054000000000000006</outerradius>
+                <innerradius>0.03</innerradius>
+              </centeringring>
+
+              <trapezoidfinset>
+                <name>Trapezoidal Fin Set</name>
+                <id>83c8d399-d3af-4af4-9d7c-8750edbc855d</id>
+                <instancecount>4</instancecount>
+                <fincount>4</fincount>
+                <radiusoffset method="surface">0.0</radiusoffset>
+                <angleoffset method="relative">0.0</angleoffset>
+                <rotation>0.0</rotation>
+                <axialoffset method="bottom">0.0</axialoffset>
+                <position type="bottom">0.0</position>
+                <finish>normal</finish>
+                <material type="bulk" density="1780.0" group="Composites">Carbon fiber</material>
+                <thickness>0.003</thickness>
+                <crosssection>square</crosssection>
+                <cant>0.0</cant>
+                <filletradius>0.0</filletradius>
+                <filletmaterial type="bulk" density="1780.0" group="Composites">Carbon fiber</filletmaterial>
+                <rootchord>0.31</rootchord>
+                <tipchord>0.1</tipchord>
+                <sweeplength>0.1485965240147927</sweeplength>
+                <height>0.14000000000000004</height>
+              </trapezoidfinset>
+            </subcomponents>
+          </bodytube>
+        </subcomponents>
+      </stage>
+    </subcomponents>
+  </rocket>
+
+  <simulations>
+    <simulation status="notsimulated">
+      <name>Simulation 1</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>fe18026a-77ae-4af8-acb4-130db934461a</configid>
+        <launchrodlength>6.4</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>5.0</windaverage>
+        <windturbulence>0.10000000000000002</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>5.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.5000000000000001</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.02e4" maxvelocity="385.935" maxacceleration="92.364" maxmach="1.197" timetoapogee="47.345" flighttime="101.795" groundhitvelocity="247.867" launchrodvelocity="31.923" optimumdelay="24.303">
+        <warning type="Other">
+          <id>68491ad9-dad4-4e7b-bb12-7bb9fde8a717</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 2</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>fe18026a-77ae-4af8-acb4-130db934461a</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="6257.856" maxvelocity="253.629" maxacceleration="43.239" maxmach="0.78" timetoapogee="49.321" flighttime="91.171" groundhitvelocity="219.95" launchrodvelocity="15.707" optimumdelay="15.05">
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 3</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>c31fe6b3-4435-4462-bf70-6f97c4f18e98</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.023e4" maxvelocity="546.182" maxacceleration="83.375" maxmach="1.671" timetoapogee="44.34" flighttime="100.23" groundhitvelocity="235.146" launchrodvelocity="27.974" optimumdelay="31.871">
+        <warning type="Other">
+          <id>4f1e00a7-dd80-447a-80ce-fe28034aa5f1</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+        <warning type="Other">
+          <id>8cfe5888-8c9f-4c34-b10d-ecacbdb143f8</id>
+          <description>Open forward airframe (diameter &gt; 0)</description>
+          <priority>LOW</priority>
+          <source>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</source>
+          Open forward airframe (diameter &gt; 0):  &quot;Booster Tube&quot;
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 4</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>fe18026a-77ae-4af8-acb4-130db934461a</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="6391.975" maxvelocity="258.964" maxacceleration="42.827" maxmach="0.796" timetoapogee="48.871" flighttime="91.171" groundhitvelocity="220.723" launchrodvelocity="15.707" optimumdelay="15.6">
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 5</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>fe18026a-77ae-4af8-acb4-130db934461a</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="6291.548" maxvelocity="253.386" maxacceleration="43.211" maxmach="0.779" timetoapogee="49.471" flighttime="91.371" groundhitvelocity="220.178" launchrodvelocity="15.708" optimumdelay="15.2">
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 6</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>47bb31df-2125-46ad-96af-a3b0d8c54c59</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.039e4" maxvelocity="507.208" maxacceleration="90.715" maxmach="1.558" timetoapogee="45.875" flighttime="325.475" groundhitvelocity="43.389" launchrodvelocity="27.543" optimumdelay="32.019">
+        <warning type="Other">
+          <id>68491ad9-dad4-4e7b-bb12-7bb9fde8a717</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+        <warning type="Other">
+          <id>c7d30660-cbe7-414f-953e-f28df1b246de</id>
+          <description>Open forward airframe (diameter &gt; 0)</description>
+          <priority>LOW</priority>
+          <source>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</source>
+          Open forward airframe (diameter &gt; 0):  &quot;Booster Tube&quot;
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 7</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>47bb31df-2125-46ad-96af-a3b0d8c54c59</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.022e4" maxvelocity="495.303" maxacceleration="88.744" maxmach="1.52" timetoapogee="45.775" flighttime="315.125" groundhitvelocity="47.297" launchrodvelocity="27.681" optimumdelay="31.919">
+        <warning type="Other">
+          <id>68491ad9-dad4-4e7b-bb12-7bb9fde8a717</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+        <warning type="Other">
+          <id>c7d30660-cbe7-414f-953e-f28df1b246de</id>
+          <description>Open forward airframe (diameter &gt; 0)</description>
+          <priority>LOW</priority>
+          <source>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</source>
+          Open forward airframe (diameter &gt; 0):  &quot;Booster Tube&quot;
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 8</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>47bb31df-2125-46ad-96af-a3b0d8c54c59</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="7352.542" maxvelocity="430.751" maxacceleration="66.095" maxmach="1.303" timetoapogee="39.931" flighttime="87.981" groundhitvelocity="232.465" launchrodvelocity="24.48" optimumdelay="28.169">
+        <warning type="Other">
+          <id>3bd5cb32-9d72-447c-961d-56bc6f8a1cce</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 9</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>c31fe6b3-4435-4462-bf70-6f97c4f18e98</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.022e4" maxvelocity="546.089" maxacceleration="83.342" maxmach="1.671" timetoapogee="44.29" flighttime="77.19" launchrodvelocity="27.962" optimumdelay="31.871">
+        <warning type="Other">
+          <id>4f1e00a7-dd80-447a-80ce-fe28034aa5f1</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 10</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>c31fe6b3-4435-4462-bf70-6f97c4f18e98</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.023e4" maxvelocity="546.19" maxacceleration="83.37" maxmach="1.671" timetoapogee="44.34" flighttime="100.303" groundhitvelocity="235.116" launchrodvelocity="27.974" optimumdelay="31.871">
+        <warning type="Other">
+          <id>4f1e00a7-dd80-447a-80ce-fe28034aa5f1</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+        <warning type="Other">
+          <id>8cfe5888-8c9f-4c34-b10d-ecacbdb143f8</id>
+          <description>Open forward airframe (diameter &gt; 0)</description>
+          <priority>LOW</priority>
+          <source>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</source>
+          Open forward airframe (diameter &gt; 0):  &quot;Booster Tube&quot;
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 11</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>c31fe6b3-4435-4462-bf70-6f97c4f18e98</configid>
+        <launchrodlength>6.4</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>5.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>5.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.5</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.569e4" maxvelocity="649.028" maxacceleration="126.821" maxmach="2.047" timetoapogee="53.478" flighttime="125.823" groundhitvelocity="234.559" launchrodvelocity="36.113" optimumdelay="38.75">
+        <warning type="Other">
+          <id>4f1e00a7-dd80-447a-80ce-fe28034aa5f1</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+        <warning type="Other">
+          <id>8cfe5888-8c9f-4c34-b10d-ecacbdb143f8</id>
+          <description>Open forward airframe (diameter &gt; 0)</description>
+          <priority>LOW</priority>
+          <source>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</source>
+          Open forward airframe (diameter &gt; 0):  &quot;Booster Tube&quot;
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 12</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>f7417c4a-44c9-4249-a843-6260d0e3b12c</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="7568.265" maxvelocity="604.714" maxacceleration="144.044" maxmach="1.851" timetoapogee="19.784" flighttime="19.784" launchrodvelocity="37.136">
+        <warning type="Other">
+          <id>68491ad9-dad4-4e7b-bb12-7bb9fde8a717</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 13</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>f7417c4a-44c9-4249-a843-6260d0e3b12c</configid>
+        <launchrodlength>6.4</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>5.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>3.0</windaverage>
+        <windturbulence>0.024000000000000004</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>3.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.07200000000000001</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.109e4" maxvelocity="604.477" maxacceleration="144.074" maxmach="1.851" timetoapogee="45.934" flighttime="102.984" groundhitvelocity="252.25" launchrodvelocity="41.066" optimumdelay="35.35">
+        <warning type="Other">
+          <id>68491ad9-dad4-4e7b-bb12-7bb9fde8a717</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+        <warning type="Other">
+          <id>c7d30660-cbe7-414f-953e-f28df1b246de</id>
+          <description>Open forward airframe (diameter &gt; 0)</description>
+          <priority>LOW</priority>
+          <source>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</source>
+          Open forward airframe (diameter &gt; 0):  &quot;Booster Tube&quot;
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 14</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>f7417c4a-44c9-4249-a843-6260d0e3b12c</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="6992.067" maxvelocity="374.787" maxacceleration="76.13" maxmach="1.139" timetoapogee="38.419" flighttime="83.766" groundhitvelocity="223.114" launchrodvelocity="27.067" optimumdelay="24.95">
+        <warning type="Other">
+          <id>4f1e00a7-dd80-447a-80ce-fe28034aa5f1</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 15</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>47bb31df-2125-46ad-96af-a3b0d8c54c59</configid>
+        <launchrodlength>6.4</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>3.0</windaverage>
+        <windturbulence>0.10000000000000002</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>3.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.30000000000000004</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="9390.749" maxvelocity="491.506" maxacceleration="94.523" maxmach="1.51" timetoapogee="42.775" flighttime="98.125" groundhitvelocity="221.95" launchrodvelocity="32.176" optimumdelay="28.919">
+        <warning type="Other">
+          <id>4f1e00a7-dd80-447a-80ce-fe28034aa5f1</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+        <warning type="Other">
+          <id>8cfe5888-8c9f-4c34-b10d-ecacbdb143f8</id>
+          <description>Open forward airframe (diameter &gt; 0)</description>
+          <priority>LOW</priority>
+          <source>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</source>
+          Open forward airframe (diameter &gt; 0):  &quot;Booster Tube&quot;
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 16</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>47bb31df-2125-46ad-96af-a3b0d8c54c59</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 17</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>47bb31df-2125-46ad-96af-a3b0d8c54c59</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.145e4" maxvelocity="560.222" maxacceleration="100.697" maxmach="1.729" timetoapogee="47.075" flighttime="107.075" groundhitvelocity="235.929" launchrodvelocity="29.809" optimumdelay="33.269">
+        <warning type="Other">
+          <id>68491ad9-dad4-4e7b-bb12-7bb9fde8a717</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+        <warning type="Other">
+          <id>c7d30660-cbe7-414f-953e-f28df1b246de</id>
+          <description>Open forward airframe (diameter &gt; 0)</description>
+          <priority>LOW</priority>
+          <source>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</source>
+          Open forward airframe (diameter &gt; 0):  &quot;Booster Tube&quot;
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 18</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>47bb31df-2125-46ad-96af-a3b0d8c54c59</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.025e4" maxvelocity="531.689" maxacceleration="100.135" maxmach="1.638" timetoapogee="44.175" flighttime="102.139" groundhitvelocity="222.473" launchrodvelocity="29.77" optimumdelay="30.369">
+        <warning type="Other">
+          <id>68491ad9-dad4-4e7b-bb12-7bb9fde8a717</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+        <warning type="Other">
+          <id>c7d30660-cbe7-414f-953e-f28df1b246de</id>
+          <description>Open forward airframe (diameter &gt; 0)</description>
+          <priority>LOW</priority>
+          <source>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</source>
+          Open forward airframe (diameter &gt; 0):  &quot;Booster Tube&quot;
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 19</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>47bb31df-2125-46ad-96af-a3b0d8c54c59</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.021e4" maxvelocity="495.298" maxacceleration="88.742" maxmach="1.52" timetoapogee="45.775" flighttime="315.075" groundhitvelocity="46.664" launchrodvelocity="27.681" optimumdelay="31.919">
+        <warning type="Other">
+          <id>68491ad9-dad4-4e7b-bb12-7bb9fde8a717</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+        <warning type="Other">
+          <id>c7d30660-cbe7-414f-953e-f28df1b246de</id>
+          <description>Open forward airframe (diameter &gt; 0)</description>
+          <priority>LOW</priority>
+          <source>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</source>
+          Open forward airframe (diameter &gt; 0):  &quot;Booster Tube&quot;
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 20</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>47bb31df-2125-46ad-96af-a3b0d8c54c59</configid>
+        <launchrodlength>6.4</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.039e4" maxvelocity="507.21" maxacceleration="90.714" maxmach="1.558" timetoapogee="45.875" flighttime="325.475" groundhitvelocity="43.478" launchrodvelocity="31.372" optimumdelay="32.019">
+        <warning type="Other">
+          <id>68491ad9-dad4-4e7b-bb12-7bb9fde8a717</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+        <warning type="Other">
+          <id>c7d30660-cbe7-414f-953e-f28df1b246de</id>
+          <description>Open forward airframe (diameter &gt; 0)</description>
+          <priority>LOW</priority>
+          <source>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</source>
+          Open forward airframe (diameter &gt; 0):  &quot;Booster Tube&quot;
+        </warning>
+      </flightdata>
+    </simulation>
+
+    <simulation status="notsimulated">
+      <name>Simulation 21</name>
+      <simulator>RK4Simulator</simulator>
+      <calculator>BarrowmanCalculator</calculator>
+      <conditions>
+        <configid>f7417c4a-44c9-4249-a843-6260d0e3b12c</configid>
+        <launchrodlength>5.0</launchrodlength>
+        <launchintowind>false</launchintowind>
+        <launchrodangle>0.0</launchrodangle>
+        <launchroddirection>90.0</launchroddirection>
+        <windaverage>2.0</windaverage>
+        <windturbulence>0.1</windturbulence>
+        <winddirection>1.5707963267948966</winddirection>
+        <wind model="average">
+          <speed>2.0</speed>
+          <direction>1.5707963267948966</direction>
+          <standarddeviation>0.2</standarddeviation>
+        </wind>
+        <wind model="multilevel" altituderef="msl">
+          <windlevel altitude="0.0" speed="2.0" direction="1.5707963267948966" standarddeviation="0.2"/>
+        </wind>
+        <windmodeltype>Average</windmodeltype>
+        <launchaltitude>0.0</launchaltitude>
+        <launchlatitude>28.61</launchlatitude>
+        <launchlongitude>-80.6</launchlongitude>
+        <geodeticmethod>spherical</geodeticmethod>
+        <atmosphere model="isa"/>
+        <timestep>0.05</timestep>
+        <maxtime>1200.0</maxtime>
+      </conditions>
+      <flightdata maxaltitude="1.143e4" maxvelocity="442.014" maxacceleration="58.294" maxmach="1.371" timetoapogee="51.423" flighttime="108.973" groundhitvelocity="260.969" launchrodvelocity="23.367" optimumdelay="28.2">
+        <warning type="Other">
+          <id>68491ad9-dad4-4e7b-bb12-7bb9fde8a717</id>
+          <description>Body calculations may not be entirely accurate at supersonic speeds.</description>
+          <priority>NORMAL</priority>
+          Body calculations may not be entirely accurate at supersonic speeds.
+        </warning>
+        <warning type="Other">
+          <id>c7d30660-cbe7-414f-953e-f28df1b246de</id>
+          <description>Open forward airframe (diameter &gt; 0)</description>
+          <priority>LOW</priority>
+          <source>a3f2040e-bc92-42a9-b6a3-9a332fcd75c5</source>
+          Open forward airframe (diameter &gt; 0):  &quot;Booster Tube&quot;
+        </warning>
+      </flightdata>
+    </simulation>
+  </simulations>
+  <photostudio>
+  </photostudio>
+  <docprefs>
+  </docprefs>
+</openrocket>

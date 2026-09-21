@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ork2svg"
+version = "0.1.0"
+description = "Convert OpenRocket (.ork) files into dimensioned CAD SVG drawings and PNG images"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "resvg-py>=0.5.0",
+]
+
+[project.scripts]
+ork2svg = "ork2svg.cli:main"
